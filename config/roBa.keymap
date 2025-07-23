@@ -14,18 +14,18 @@
     automouse-layer = <4>;
     scroll-layers = <5>;
 
-     arrows {
-         layers = <3>;
-         bindings =
-             <&kp RIGHT_ARROW>,
-             <&kp LEFT_ARROW>,
-             <&kp UP_ARROW>,
-             <&kp DOWN_ARROW>;
+    arrows {
+        layers = <3>;
+        bindings =
+            <&kp RIGHT_ARROW>,
+            <&kp LEFT_ARROW>,
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>;
 
-         tick = <10>;
-         wait-ms = <5>;
-         tap-ms = <5>;
-     };
+        tick = <10>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
 
 / {
@@ -84,6 +84,7 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             tap-ms = <20>;
         };
     };
@@ -122,10 +123,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans    &kp LC(LS(TAB))   &kp UP_ARROW    &kp LS(TAB)        &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &kp HOME  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans    &kp LS(LG(LEFT))  &trans          &kp LS(LG(RIGHT))  &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                         &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -133,10 +134,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                         &trans           &trans    &kp LC(T)  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(V)  &kp LS(LC(TAB))  &mkp MB1  &mkp MB3   &mkp MB2  &kp LC(TAB)
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LS(C)  &trans           &mkp MB4  &kp LC(W)  &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans                                          &trans
             >;
         };
 
