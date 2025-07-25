@@ -175,7 +175,7 @@
             bindings = <
 &trans                       &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
 &trans                       &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&mt_exit_AML_on_tap LS(Z) Z  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &trans    &mkp MB5  &trans
+&mt_exit_AML_on_tap LS(Z) Z  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans                       &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
