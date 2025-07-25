@@ -23,6 +23,7 @@
         22 // Z
         30 // M
         32 // .
+        34 // CTRL
     >;
     require-prior-idle-ms = <200>;
 };
