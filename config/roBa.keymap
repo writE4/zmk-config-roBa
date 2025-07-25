@@ -144,10 +144,10 @@
 
         FUNCTION {
             bindings = <
-&trans     &kp LC(W)  &trans     &trans     &trans                      &kp F1     &kp F2  &kp F3  &kp F4  &kp F5
-&kp LC(A)  &kp LS(S)  &trans     &kp LC(F)  &trans  &trans      &trans  &kp F6     &kp F7  &kp F8  &kp F9  &kp F10
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans      &trans  &kp LC(N)  &trans  &trans  &trans  &kp F11
-&trans     &trans     &trans     &trans     &trans  &trans      &trans  &trans                             &kp F12
+&trans     &kp LC(W)  &kp LG(E)  &trans     &kp LC(T)                                &kp F1     &kp F2           &kp F3             &kp F4       &kp F5
+&kp LC(A)  &kp LS(S)  &kp LG(D)  &kp LC(F)  &trans     &trans             &trans     &kp F6     &kp F7           &kp F8             &kp F9       &kp F10
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans     &kp LS(LG(S))      &kp LC(W)  &kp LC(N)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LA(TAB)  &kp F11
+&trans     &trans     &trans     &trans     &trans     &trans             &trans     &trans                                                      &kp F12
             >;
         };
 
@@ -173,10 +173,10 @@
 
         MOUSE {
             bindings = <
-&trans                       &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans                       &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&mt_exit_AML_on_tap LS(Z) Z  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&kp LEFT_CONTROL             &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans                                         &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans                                         &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&mt_exit_AML_on_tap LS(Z) Z                    &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&mt_exit_AML_on_tap LEFT_CONTROL LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
