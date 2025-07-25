@@ -176,7 +176,7 @@
 &trans                       &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
 &trans                       &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &mt_exit_AML_on_tap LS(Z) Z  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans                       &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&kp LEFT_CONTROL             &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
